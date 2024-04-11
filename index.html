@@ -81,7 +81,7 @@
         <div class="lg:mx-14 mx-6 mb-24">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
-                    <div class="hero min-h-[600px]" style="background-image: url(images/banner1.png);">
+                    <div class="hero" style="background-image: url(images/banner1.png);">
                         <div class="hero-overlay bg-opacity-60"></div>
                         <div class="hero-content text-center text-neutral-content">
                             <div class="max-w-md">
@@ -91,7 +91,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
+                    <div
+                        class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
                         <div class="justify-center text-center">
                             <img src="images/fruit1.png" alt="">
                             <p>Strawberry</p>
@@ -129,7 +130,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
+                    <div
+                        class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
                         <div class="justify-center text-center">
                             <img src="images/fruit1.png" alt="">
                             <p>Strawberry</p>
@@ -167,7 +169,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
+                    <div
+                        class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
                         <div class="justify-center text-center">
                             <img src="images/fruit1.png" alt="">
                             <p>Strawberry</p>
@@ -205,7 +208,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
+                    <div
+                        class="absolute lg:flex hidden justify-center items-center gap-6 bg-gradient-to-b from-white to-slate-200 p-6 rounded-lg -bottom-20 left-40 shadow-slate-400 shadow-lg z-10 mb-6">
                         <div class="justify-center text-center">
                             <img src="images/fruit1.png" alt="">
                             <p>Strawberry</p>
@@ -236,7 +240,167 @@
         </div>
     </header>
     <main>
-
+        <!-- Deal of the day container start  -->
+        <div class="lg:mx-14 mx-6 mb-24">
+            <!-- content section  -->
+            <div class="flex flex-col lg:flex-row justify-between items-center gap-7 mb-14">
+                <div>
+                    <h1 class="text-4xl font-bold mb-5">Deal of the day</h1>
+                    <p class="lg:w-1/2">Contrary to popular belief, is not simply random text. It has roots in a piece
+                        of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex gap-5">
+                    <div>
+                        <span class="countdown font-mono text-4xl">
+                            <span style="--value:15;"></span>
+                        </span>
+                        days
+                    </div>
+                    <div class="text-5xl">:</div>
+                    <div>
+                        <span class="countdown font-mono text-4xl">
+                            <span style="--value:10;"></span>
+                        </span>
+                        hours
+                    </div>
+                    <div class="text-5xl">:</div>
+                    <div>
+                        <span class="countdown font-mono text-4xl">
+                            <span style="--value:24;"></span>
+                        </span>
+                        min
+                    </div>
+                    <div class="text-5xl">:</div>
+                    <div>
+                        <span class="countdown font-mono text-4xl">
+                            <span style="--value:47;"></span>
+                        </span>
+                        sec
+                    </div>
+                </div>
+            </div>
+            <!-- fruit items content  -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- item one  -->
+                <div class="card card-compact text-center p-7 bg-base-100 shadow-xl">
+                    <figure><img src="images/fruit6.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                        <p>Apples</p>
+                        <img src="images/Group 24.png" alt="">
+                        <div class="card-actions justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559]" onclick="my_modal_5.showModal()">Details</button>
+                            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box">
+                                    <img class="mx-auto" src="images/fruit6.png" alt="">
+                                    <h3 class="font-bold text-lg">12.90$ - 18.85$</h3>
+                                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore perferendis accusantium earum, dolores deleniti modi temporibus illo.</p>
+                                    <img class="mx-auto" src="images/Group 24.png" alt="">
+                                    <div class="modal-action justify-center gap-7">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn mr-6">Close</button>
+                                            <button class="btn bg-[#F85559] text-white">Boy NOw</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- item two  -->
+                <div class="card card-compact text-center p-7 bg-base-100 shadow-xl">
+                    <figure><img src="images/fruit7.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                        <p>Orange</p>
+                        <img src="images/Group 24.png" alt="">
+                        <div class="card-actions justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559]" onclick="my_modal_6.showModal()">Details</button>
+                            <dialog id="my_modal_6" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box">
+                                    <img class="mx-auto" src="images/fruit7.png" alt="">
+                                    <h3 class="font-bold text-lg">12.90$ - 18.85$</h3>
+                                    <p class="my-5">Orange</p>
+                                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore perferendis accusantium earum, dolores deleniti modi temporibus illo.</p>
+                                    <img class="mx-auto" src="images/Group 24.png" alt="">
+                                    <div class="modal-action justify-center gap-7">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn mr-6">Close</button>
+                                            <button class="btn bg-[#F85559] text-white">Boy NOw</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- item three  -->
+                <div class="card card-compact text-center p-7 bg-base-100 shadow-xl">
+                    <figure><img src="images/fruit8.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                        <p>Red Dragon</p>
+                        <img src="images/Group 24.png" alt="">
+                        <div class="card-actions justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559]" onclick="my_modal_7.showModal()">Details</button>
+                            <dialog id="my_modal_7" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box">
+                                    <img class="mx-auto" src="images/fruit8.png" alt="">
+                                    <h3 class="font-bold text-lg">12.90$ - 18.85$</h3>
+                                    <p class="my-5">Red Dragon</p>
+                                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore perferendis accusantium earum, dolores deleniti modi temporibus illo.</p>
+                                    <img class="mx-auto" src="images/Group 24.png" alt="">
+                                    <div class="modal-action justify-center gap-7">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn mr-6">Close</button>
+                                            <button class="btn bg-[#F85559] text-white">Boy NOw</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+                <!-- item one  -->
+                <div class="card card-compact text-center p-7 bg-base-100 shadow-xl">
+                    <figure><img src="images/fruit9.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title justify-center">12.90$ - 18.85$</h2>
+                        <p>Banana</p>
+                        <img src="images/Group 24.png" alt="">
+                        <div class="card-actions justify-center">
+                            <!-- Open the modal using ID.showModal() method -->
+                            <button class="text-[#F85559]" onclick="my_modal_8.showModal()">Details</button>
+                            <dialog id="my_modal_8" class="modal modal-bottom sm:modal-middle">
+                                <div class="modal-box">
+                                    <img class="mx-auto" src="images/fruit9.png" alt="">
+                                    <h3 class="font-bold text-lg">12.90$ - 18.85$</h3>
+                                    <p class="my-5">Banana</p>
+                                    <p class="py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates labore perferendis accusantium earum, dolores deleniti modi temporibus illo.</p>
+                                    <img class="mx-auto" src="images/Group 24.png" alt="">
+                                    <div class="modal-action justify-center gap-7">
+                                        <form method="dialog">
+                                            <!-- if there is a button in form, it will close the modal -->
+                                            <button class="btn mr-6">Close</button>
+                                            <button class="btn bg-[#F85559] text-white">Boy NOw</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </dialog>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center my-10">
+                <button class="btn btn-primary bg-[#F85559] border-0 text-white">Shop All</button>
+            </div>
+        </div>
     </main>
     <footer>
 
